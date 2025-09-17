@@ -9,4 +9,7 @@ router.post("/", MedicationController.create);
 router.put("/:id", MedicationController.update);
 router.delete("/:id", MedicationController.remove);
 
+// New endpoint for total medications
+router.get("/reports/total", MedicationController.getTotal);
+
 export default router;
